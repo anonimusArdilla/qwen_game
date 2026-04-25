@@ -1,0 +1,73 @@
+<h2>项目拆分与架构方案（Neon Survivor）</h2>
+<p class="subtitle">你要求“完整可上架”包含大量独立子系统。我将按可验证阶段推进，每阶段都可独立测试与发布。</p>
+
+<div class="section">
+  <h3>交付阶段（建议）</h3>
+  <div class="mockup">
+    <div class="mockup-header">Phased Delivery</div>
+    <div class="mockup-body">
+      <div class="placeholder" style="padding:12px">
+        Phase 0：Flutter+Flame 脚手架、CI 级测试/Analyze、基础本地化框架、基础资产管线
+      </div>
+      <div class="placeholder" style="padding:12px;margin-top:8px">
+        Phase 1：核心战斗循环（3 波次+Boss）、碰撞/对象池、输入、暂停/恢复、离线存档、关卡/世界生成
+      </div>
+      <div class="placeholder" style="padding:12px;margin-top:8px">
+        Phase 2：经济/商店/皮肤/成就（离线可用，云端接口抽象可 Mock）
+      </div>
+      <div class="placeholder" style="padding:12px;margin-top:8px">
+        Phase 3：广告变现（激励/插屏 + 远程配置回退 + 频控 + 用户降频偏好）
+      </div>
+      <div class="placeholder" style="padding:12px;margin-top:8px">
+        Phase 4：Supabase 云端（登录可选、云存档、排行榜、远程配置、成就同步）
+      </div>
+      <div class="placeholder" style="padding:12px;margin-top:8px">
+        Phase 5：上架物料与 Release 管线（图标/启动图/元数据结构/权限审计/Release 优化）
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h3>整洁架构：3 种实现路径（默认选 A）</h3>
+  <p class="subtitle">Flame Game 与 Flutter UI 严格隔离；UI 只订阅可预测状态；游戏循环只依赖纯 Dart 领域逻辑。</p>
+  <div class="options">
+    <div class="option" data-choice="a_riverpod" onclick="toggleSelect(this)">
+      <div class="letter">A</div>
+      <div class="content">
+        <h3>Riverpod + 手动 DI（推荐默认）</h3>
+        <p>用 Provider 容器组合依赖；领域层纯 Dart；表现层（Flame/Flutter）只持有接口。</p>
+      </div>
+    </div>
+    <div class="option" data-choice="b_bloc" onclick="toggleSelect(this)">
+      <div class="letter">B</div>
+      <div class="content">
+        <h3>BLoC/Cubit + 手动 DI</h3>
+        <p>事件驱动更显式；适合复杂菜单/商店流程；但样板略多。</p>
+      </div>
+    </div>
+    <div class="option" data-choice="c_minimal" onclick="toggleSelect(this)">
+      <div class="letter">C</div>
+      <div class="content">
+        <h3>极简自研状态 + 显式构造注入</h3>
+        <p>依赖最少；但对团队扩展与可维护性要求更高。</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h3>关键外部依赖（均支持“无凭证降级”）</h3>
+  <div class="mockup">
+    <div class="mockup-header">External Services (Optional)</div>
+    <div class="mockup-body">
+      <div class="placeholder" style="padding:12px">Supabase：云存档/排行榜/远程配置/成就同步（无 key 则离线模式）</div>
+      <div class="placeholder" style="padding:12px;margin-top:8px">广告：默认 Google Mobile Ads（AdMob）；无 app-id 则隐藏广告入口</div>
+      <div class="placeholder" style="padding:12px;margin-top:8px">崩溃与分析：接口抽象（如 Sentry/Firebase），无 DSN 则本地记录</div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <p class="subtitle">你无需回复也能继续：我将默认选择 A（Riverpod + 手动 DI），并按上述 Phase 顺序写入设计文档。</p>
+</div>
