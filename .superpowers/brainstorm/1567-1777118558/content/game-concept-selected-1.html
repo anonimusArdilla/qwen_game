@@ -1,0 +1,41 @@
+<h2>将继续：Neon Survivor（俯视角生存 Roguelite）</h2>
+<p class="subtitle">你未在页面中做出选择（未检测到点击事件），我将按推荐方案继续推进完整设计。</p>
+
+<div class="section">
+  <h3>单局核心循环（2–5 分钟）</h3>
+  <div class="mockup">
+    <div class="mockup-header">Run Flow</div>
+    <div class="mockup-body">
+      <div class="placeholder" style="padding:14px">进入关卡 → 3 个波次（每波 45–60s）→ 波次结算/选卡 → Boss → 结算（金币/成就/排行上报）</div>
+      <div style="display:flex;gap:10px;margin-top:10px">
+        <div class="placeholder" style="flex:1;padding:12px">失败：激励视频继续（限次）</div>
+        <div class="placeholder" style="flex:1;padding:12px">自然断点：每 3 关一次插屏（5 分钟冷却 + 可降频）</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h3>接下来要确认的关键点（终端回答即可）</h3>
+  <p class="subtitle">我会据此写入 GAME_DESIGN.md，并进入整洁架构设计与落地计划。</p>
+  <div class="options">
+    <div class="option" data-choice="supabase_ready" onclick="toggleSelect(this)">
+      <div class="letter">A</div>
+      <div class="content">
+        <h3>我已有 Supabase 项目</h3>
+        <p>我可以提供 URL / anon key（后续在本地用环境变量配置）。</p>
+      </div>
+    </div>
+    <div class="option" data-choice="supabase_later" onclick="toggleSelect(this)">
+      <div class="letter">B</div>
+      <div class="content">
+        <h3>稍后再提供 Supabase</h3>
+        <p>先做离线可玩 + 接口抽象与可 Mock 测试，等你给凭证再接入云端。</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <p class="subtitle">请在终端回复 A 或 B（或直接说“继续”，我将默认 B）。</p>
+</div>
