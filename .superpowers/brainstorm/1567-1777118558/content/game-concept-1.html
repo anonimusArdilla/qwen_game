@@ -1,0 +1,126 @@
+<h2>选择游戏核心概念</h2>
+<p class="subtitle">目标：2–5 分钟单局、亚洲市场高留存、仅广告变现、Flame 可稳定 60/120 FPS</p>
+
+<div class="cards">
+  <div class="card" data-choice="neon_survivor" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div class="mockup">
+        <div class="mockup-header">Neon Survivor（推荐）</div>
+        <div class="mockup-body">
+          <div class="mock-nav">HUD：HP | Wave | Coins | Skill</div>
+          <div style="display:flex;gap:12px;margin-top:12px">
+            <div class="placeholder" style="flex:1;min-height:140px">俯视角场景（自动射击）</div>
+            <div style="width:140px;display:flex;flex-direction:column;gap:8px">
+              <div class="placeholder" style="height:40px">一键冲刺</div>
+              <div class="placeholder" style="height:40px">技能槽</div>
+              <div class="placeholder" style="height:40px">拾取磁吸</div>
+            </div>
+          </div>
+          <div style="margin-top:12px" class="subtitle">一指移动 + 自动射击 + 波次 Roguelite 选卡</div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>Neon Survivor（俯视角生存）</h3>
+      <p>单局 3 分钟：3 个波次 + Boss。每波次后选升级卡，支持检查点与“继续”激励广告。</p>
+      <div class="pros-cons">
+        <div class="pros">
+          <h4>Pros</h4>
+          <ul>
+            <li>高重玩：Build 组合驱动</li>
+            <li>单手操作，节奏快</li>
+            <li>适配 Flame：碰撞/对象池/批渲染易做</li>
+          </ul>
+        </div>
+        <div class="cons">
+          <h4>Cons</h4>
+          <ul>
+            <li>需要良好数值与生成算法</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" data-choice="lane_runner" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div class="mockup">
+        <div class="mockup-header">Lane Runner</div>
+        <div class="mockup-body">
+          <div class="mock-nav">HUD：Distance | Combo | Gems</div>
+          <div style="display:flex;gap:12px;margin-top:12px">
+            <div class="placeholder" style="flex:1;min-height:140px">三轨道场景（换道 + 跳跃）</div>
+            <div style="width:140px;display:flex;flex-direction:column;gap:8px">
+              <div class="placeholder" style="height:40px">左滑换道</div>
+              <div class="placeholder" style="height:40px">右滑换道</div>
+              <div class="placeholder" style="height:40px">上滑跳</div>
+            </div>
+          </div>
+          <div style="margin-top:12px" class="subtitle">短冲刺关卡 + 关卡连击 + 皮肤驱动</div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>Lane Runner（街机跑酷）</h3>
+      <p>每关 45–60 秒，3 关一个自然断点触发插屏。难度曲线清晰，易做关卡扩展。</p>
+      <div class="pros-cons">
+        <div class="pros">
+          <h4>Pros</h4>
+          <ul>
+            <li>实现快，性能压力低</li>
+            <li>关卡制作流程简单</li>
+          </ul>
+        </div>
+        <div class="cons">
+          <h4>Cons</h4>
+          <ul>
+            <li>同质化高，需要强主题与手感</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" data-choice="stack_defense" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div class="mockup">
+        <div class="mockup-header">Stack Defense</div>
+        <div class="mockup-body">
+          <div class="mock-nav">HUD：Tower HP | Wave | Gold</div>
+          <div style="display:flex;gap:12px;margin-top:12px">
+            <div class="placeholder" style="flex:1;min-height:140px">中心塔 + 旋转炮台</div>
+            <div style="width:140px;display:flex;flex-direction:column;gap:8px">
+              <div class="placeholder" style="height:40px">拖拽放置</div>
+              <div class="placeholder" style="height:40px">合成升级</div>
+              <div class="placeholder" style="height:40px">技能</div>
+            </div>
+          </div>
+          <div style="margin-top:12px" class="subtitle">轻度合成 + 波次塔防</div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>Stack Defense（合成塔防）</h3>
+      <p>拖拽与合成形成“局内策略”，Meta 通过解锁新模块与成就驱动。</p>
+      <div class="pros-cons">
+        <div class="pros">
+          <h4>Pros</h4>
+          <ul>
+            <li>策略性更强，付费点可替换为广告点</li>
+            <li>UI/游戏混合，适合 Flutter 覆盖层</li>
+          </ul>
+        </div>
+        <div class="cons">
+          <h4>Cons</h4>
+          <ul>
+            <li>拖拽交互与同步更复杂</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <p class="subtitle">点击卡片选择其一（只选一个）。如果你无偏好，我将采用“Neon Survivor（推荐）”继续做完整设计与实现。</p>
+</div>
