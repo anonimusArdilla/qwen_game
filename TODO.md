@@ -6,7 +6,7 @@
 - [x] Flutter 工程初始化（beat_drift）
 - [x] Lint 规则：flame_lint
 - [x] .env.example 与启动校验器（APP_ENV）
-- [~] 文档：README / ARCHITECTURE / GAME_DESIGN / ECONOMY / ASSET_PIPELINE
+- [x] 文档：README / ARCHITECTURE / GAME_DESIGN / ECONOMY / ASSET_PIPELINE
 
 ## Phase 2 — 核心脚手架
 - [x] Flutter UI 壳：Home / Settings
@@ -24,4 +24,3 @@
 - [ ] 关卡/微关卡加载器与确定性生成
 - [ ] 碰撞与失败/重试/暂停/恢复
 - [ ] 本地存档结构与同步接口（Supabase）
-
