@@ -1,7 +1,8 @@
-import { type Piece, type PuzzleState, type SnapConfig } from "@/lib/puzzle/state"
+import { type Piece, type PieceShape, type PuzzleState, type SnapConfig } from "@/lib/puzzle/state"
+import { rectShape } from "@/lib/puzzle/shapes"
 import { type Vec2 } from "@/lib/puzzle/vec2"
 
-export type RectPieceSpec = {
+export type SizePieceSpec = {
   id: string
   size: { w: number; h: number }
   startPos: Vec2
@@ -10,10 +11,21 @@ export type RectPieceSpec = {
   targetRotation: number
 }
 
+export type ShapePieceSpec = {
+  id: string
+  shape: PieceShape
+  startPos: Vec2
+  startRotation: number
+  targetPos: Vec2
+  targetRotation: number
+}
+
+export type PieceSpec = SizePieceSpec | ShapePieceSpec
+
 export type PuzzleSpec = {
   board: { width: number; height: number }
   snap: SnapConfig
-  pieces: RectPieceSpec[]
+  pieces: PieceSpec[]
 }
 
 export function buildPuzzleState(spec: PuzzleSpec): PuzzleState {
@@ -25,7 +37,7 @@ export function buildPuzzleState(spec: PuzzleSpec): PuzzleState {
     targetRotation: p.targetRotation,
     locked: false,
     z: i + 1,
-    shape: { w: p.size.w, h: p.size.h }
+    shape: "shape" in p ? p.shape : rectShape(p.size.w, p.size.h)
   }))
 
   return {

@@ -2,14 +2,8 @@
 
 import { useEffect, useMemo, useRef } from "react"
 
-import {
-  angleDiff,
-  clamp01,
-  hitTestOrientedRect,
-  lerp,
-  smoothstep,
-  snapSatisfied
-} from "@/lib/puzzle/geom"
+import { angleDiff, clamp01, lerp, smoothstep, snapSatisfied } from "@/lib/puzzle/geom"
+import { toLocalRects } from "@/lib/puzzle/shapes"
 import { bumpZ, findPiece, snapshotPiece, type Piece, type PuzzleState } from "@/lib/puzzle/state"
 import { captureMoveRotate, recordAction, type UndoState } from "@/lib/puzzle/undo"
 import { dist, sub, type Vec2, vec } from "@/lib/puzzle/vec2"
@@ -28,7 +22,6 @@ function roundRectPath(
   r: number
 ) {
   const radius = Math.max(0, Math.min(r, Math.min(w, h) / 2))
-  ctx.beginPath()
   ctx.moveTo(x + radius, y)
   ctx.lineTo(x + w - radius, y)
   ctx.quadraticCurveTo(x + w, y, x + w, y + radius)
@@ -46,14 +39,16 @@ function drawPiece(ctx: CanvasRenderingContext2D, piece: Piece) {
   ctx.translate(piece.pos.x, piece.pos.y)
   ctx.rotate(piece.rotation)
 
-  const w = piece.shape.w
-  const h = piece.shape.h
+  const rects = toLocalRects(piece.shape)
 
   ctx.fillStyle = piece.locked ? "rgba(180, 150, 110, 0.45)" : "rgba(180, 150, 110, 0.75)"
   ctx.strokeStyle = "rgba(60, 40, 20, 0.35)"
   ctx.lineWidth = 2
 
-  roundRectPath(ctx, -w / 2, -h / 2, w, h, 10)
+  ctx.beginPath()
+  for (const r of rects) {
+    roundRectPath(ctx, r.x, r.y, r.w, r.h, 10)
+  }
   ctx.fill()
   ctx.stroke()
 
@@ -65,17 +60,29 @@ function drawTarget(ctx: CanvasRenderingContext2D, piece: Piece) {
   ctx.translate(piece.targetPos.x, piece.targetPos.y)
   ctx.rotate(piece.targetRotation)
 
-  const w = piece.shape.w
-  const h = piece.shape.h
+  const rects = toLocalRects(piece.shape)
 
   ctx.strokeStyle = "rgba(0, 0, 0, 0.18)"
   ctx.lineWidth = 1.5
   ctx.setLineDash([6, 6])
 
-  roundRectPath(ctx, -w / 2, -h / 2, w, h, 10)
+  ctx.beginPath()
+  for (const r of rects) {
+    roundRectPath(ctx, r.x, r.y, r.w, r.h, 10)
+  }
   ctx.stroke()
 
   ctx.restore()
+}
+
+function rotatePoint(pt: Vec2, angle: number): Vec2 {
+  const c = Math.cos(angle)
+  const s = Math.sin(angle)
+  return vec(pt.x * c - pt.y * s, pt.x * s + pt.y * c)
+}
+
+function pointInRect(pt: Vec2, r: { x: number; y: number; w: number; h: number }): boolean {
+  return pt.x >= r.x && pt.x <= r.x + r.w && pt.y >= r.y && pt.y <= r.y + r.h
 }
 
 function cloneState(state: PuzzleState): PuzzleState {
@@ -167,12 +174,11 @@ export function PuzzleCanvas({
       const sorted = [...state.pieces].sort((a, b) => b.z - a.z)
       for (const p of sorted) {
         if (p.locked) continue
-        const rect = {
-          center: p.pos,
-          half: { x: p.shape.w / 2, y: p.shape.h / 2 },
-          rotation: p.rotation
+        const local = rotatePoint(sub(pt, p.pos), -p.rotation)
+        const rects = toLocalRects(p.shape)
+        for (const r of rects) {
+          if (pointInRect(local, r)) return p
         }
-        if (hitTestOrientedRect(pt, rect)) return p
       }
       return null
     }
