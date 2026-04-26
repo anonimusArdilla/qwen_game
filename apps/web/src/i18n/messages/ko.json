@@ -30,16 +30,16 @@
     "hint": "드래그로 이동 · Alt 누른 채 드래그로 회전"
   },
   "puzzles": {
-    "demo1": { "title": "데모 퍼즐" },
-    "demo2": { "title": "데모 퍼즐 2" },
-    "demo3": { "title": "데모 퍼즐 3" },
-    "demo4": { "title": "데모 퍼즐 4" },
-    "demo5": { "title": "데모 퍼즐 5" },
-    "demo6": { "title": "데모 퍼즐 6" },
-    "demo7": { "title": "데모 퍼즐 7" },
-    "demo8": { "title": "데모 퍼즐 8" },
-    "demo9": { "title": "데모 퍼즐 9" },
-    "demo10": { "title": "데모 퍼즐 10" },
-    "demo11": { "title": "데모 퍼즐 11" }
+    "starter-six": { "title": "스타터(6)" },
+    "diagonal-six": { "title": "대각(6)" },
+    "cascade-six": { "title": "캐스케이드(6)" },
+    "cross-six": { "title": "크로스(6)" },
+    "stack-eight": { "title": "스택(8)" },
+    "stagger-eight": { "title": "스태거(8)" },
+    "split-eight": { "title": "스플릿(8)" },
+    "drift-ten": { "title": "드리프트(10)" },
+    "orbit-ten": { "title": "오빗(10)" },
+    "dense-twelve-a": { "title": "밀집 A(12)" },
+    "dense-twelve-b": { "title": "밀집 B(12)" }
   }
 }

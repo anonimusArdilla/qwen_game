@@ -21,58 +21,58 @@ export type PuzzleDefinition = {
 
 export const puzzles: readonly PuzzleDefinition[] = [
   {
-    id: "demo-1",
-    titleKey: "demo1.title",
+    id: "starter-six",
+    titleKey: "starter-six.title",
     createInitialState: createDemoPuzzleState
   },
   {
-    id: "demo-2",
-    titleKey: "demo2.title",
+    id: "diagonal-six",
+    titleKey: "diagonal-six.title",
     createInitialState: createDemo2PuzzleState
   },
   {
-    id: "demo-3",
-    titleKey: "demo3.title",
+    id: "cascade-six",
+    titleKey: "cascade-six.title",
     createInitialState: createDemo3PuzzleState
   },
   {
-    id: "demo-4",
-    titleKey: "demo4.title",
+    id: "cross-six",
+    titleKey: "cross-six.title",
     createInitialState: createDemo4PuzzleState
   },
   {
-    id: "demo-5",
-    titleKey: "demo5.title",
+    id: "stack-eight",
+    titleKey: "stack-eight.title",
     createInitialState: createDemo5PuzzleState
   },
   {
-    id: "demo-6",
-    titleKey: "demo6.title",
+    id: "stagger-eight",
+    titleKey: "stagger-eight.title",
     createInitialState: createDemo6PuzzleState
   },
   {
-    id: "demo-7",
-    titleKey: "demo7.title",
+    id: "split-eight",
+    titleKey: "split-eight.title",
     createInitialState: createDemo7PuzzleState
   },
   {
-    id: "demo-8",
-    titleKey: "demo8.title",
+    id: "drift-ten",
+    titleKey: "drift-ten.title",
     createInitialState: createDemo8PuzzleState
   },
   {
-    id: "demo-9",
-    titleKey: "demo9.title",
+    id: "orbit-ten",
+    titleKey: "orbit-ten.title",
     createInitialState: createDemo9PuzzleState
   },
   {
-    id: "demo-10",
-    titleKey: "demo10.title",
+    id: "dense-twelve-a",
+    titleKey: "dense-twelve-a.title",
     createInitialState: createDemo10PuzzleState
   },
   {
-    id: "demo-11",
-    titleKey: "demo11.title",
+    id: "dense-twelve-b",
+    titleKey: "dense-twelve-b.title",
     createInitialState: createDemo11PuzzleState
   }
 ]

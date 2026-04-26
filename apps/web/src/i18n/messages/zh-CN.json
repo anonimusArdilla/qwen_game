@@ -30,16 +30,16 @@
     "hint": "拖动移动 · 按住 Alt 并拖动旋转"
   },
   "puzzles": {
-    "demo1": { "title": "演示拼图" },
-    "demo2": { "title": "演示拼图 2" },
-    "demo3": { "title": "演示拼图 3" },
-    "demo4": { "title": "演示拼图 4" },
-    "demo5": { "title": "演示拼图 5" },
-    "demo6": { "title": "演示拼图 6" },
-    "demo7": { "title": "演示拼图 7" },
-    "demo8": { "title": "演示拼图 8" },
-    "demo9": { "title": "演示拼图 9" },
-    "demo10": { "title": "演示拼图 10" },
-    "demo11": { "title": "演示拼图 11" }
+    "starter-six": { "title": "入门（6）" },
+    "diagonal-six": { "title": "对角（6）" },
+    "cascade-six": { "title": "层叠（6）" },
+    "cross-six": { "title": "十字（6）" },
+    "stack-eight": { "title": "堆叠（8）" },
+    "stagger-eight": { "title": "错位（8）" },
+    "split-eight": { "title": "分区（8）" },
+    "drift-ten": { "title": "漂移（10）" },
+    "orbit-ten": { "title": "环绕（10）" },
+    "dense-twelve-a": { "title": "密集 A（12）" },
+    "dense-twelve-b": { "title": "密集 B（12）" }
   }
 }

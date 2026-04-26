@@ -1,5 +1,19 @@
 export const progressStorageKey = "woodenPuzzles.progress.v1"
 
+const puzzleIdRenameMap: Record<string, string> = {
+  "demo-1": "starter-six",
+  "demo-2": "diagonal-six",
+  "demo-3": "cascade-six",
+  "demo-4": "cross-six",
+  "demo-5": "stack-eight",
+  "demo-6": "stagger-eight",
+  "demo-7": "split-eight",
+  "demo-8": "drift-ten",
+  "demo-9": "orbit-ten",
+  "demo-10": "dense-twelve-a",
+  "demo-11": "dense-twelve-b"
+}
+
 export type PuzzleProgress = {
   completed: boolean
   bestTimeMs?: number
@@ -15,7 +29,26 @@ export function loadProgress(): ProgressMap {
     if (!raw) return {}
     const parsed = JSON.parse(raw) as unknown
     if (!parsed || typeof parsed !== "object") return {}
-    return parsed as ProgressMap
+    const map = parsed as ProgressMap
+    let changed = false
+
+    for (const [oldId, newId] of Object.entries(puzzleIdRenameMap)) {
+      const oldVal = map[oldId]
+      if (!oldVal) continue
+
+      if (map[newId] == null) {
+        map[newId] = oldVal
+        changed = true
+      }
+      delete map[oldId]
+      changed = true
+    }
+
+    if (changed) {
+      window.localStorage.setItem(progressStorageKey, JSON.stringify(map))
+    }
+
+    return map
   } catch {
     return {}
   }

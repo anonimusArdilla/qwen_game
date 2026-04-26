@@ -30,16 +30,16 @@
     "hint": "Arrastra para mover · Mantén Alt y arrastra para rotar"
   },
   "puzzles": {
-    "demo1": { "title": "Puzzle de Demostración" },
-    "demo2": { "title": "Puzzle de Demostración 2" },
-    "demo3": { "title": "Puzzle de Demostración 3" },
-    "demo4": { "title": "Puzzle de Demostración 4" },
-    "demo5": { "title": "Puzzle de Demostración 5" },
-    "demo6": { "title": "Puzzle de Demostración 6" },
-    "demo7": { "title": "Puzzle de Demostración 7" },
-    "demo8": { "title": "Puzzle de Demostración 8" },
-    "demo9": { "title": "Puzzle de Demostración 9" },
-    "demo10": { "title": "Puzzle de Demostración 10" },
-    "demo11": { "title": "Puzzle de Demostración 11" }
+    "starter-six": { "title": "Inicio (6)" },
+    "diagonal-six": { "title": "Diagonal (6)" },
+    "cascade-six": { "title": "Cascada (6)" },
+    "cross-six": { "title": "Cruz (6)" },
+    "stack-eight": { "title": "Pila (8)" },
+    "stagger-eight": { "title": "Escalonado (8)" },
+    "split-eight": { "title": "Dividido (8)" },
+    "drift-ten": { "title": "Deriva (10)" },
+    "orbit-ten": { "title": "Órbita (10)" },
+    "dense-twelve-a": { "title": "Denso A (12)" },
+    "dense-twelve-b": { "title": "Denso B (12)" }
   }
 }

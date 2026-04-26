@@ -30,16 +30,16 @@
     "hint": "Drag to move · Hold Alt and drag to rotate"
   },
   "puzzles": {
-    "demo1": { "title": "Demo Puzzle" },
-    "demo2": { "title": "Demo Puzzle 2" },
-    "demo3": { "title": "Demo Puzzle 3" },
-    "demo4": { "title": "Demo Puzzle 4" },
-    "demo5": { "title": "Demo Puzzle 5" },
-    "demo6": { "title": "Demo Puzzle 6" },
-    "demo7": { "title": "Demo Puzzle 7" },
-    "demo8": { "title": "Demo Puzzle 8" },
-    "demo9": { "title": "Demo Puzzle 9" },
-    "demo10": { "title": "Demo Puzzle 10" },
-    "demo11": { "title": "Demo Puzzle 11" }
+    "starter-six": { "title": "Starter Six" },
+    "diagonal-six": { "title": "Diagonal Six" },
+    "cascade-six": { "title": "Cascade Six" },
+    "cross-six": { "title": "Cross Six" },
+    "stack-eight": { "title": "Stack Eight" },
+    "stagger-eight": { "title": "Stagger Eight" },
+    "split-eight": { "title": "Split Eight" },
+    "drift-ten": { "title": "Drift Ten" },
+    "orbit-ten": { "title": "Orbit Ten" },
+    "dense-twelve-a": { "title": "Dense Twelve A" },
+    "dense-twelve-b": { "title": "Dense Twelve B" }
   }
 }
