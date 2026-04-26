@@ -1,0 +1,9 @@
+{
+  "app": { "name": "Rompecabezas de Madera" },
+  "home": {
+    "kicker": "Rompecabezas de Madera",
+    "title": "Un rompecabezas táctil y relajante — muy pronto.",
+    "subtitle": "La localización de la Fase 2 ya está lista. Próximo: temas y motor del puzzle."
+  },
+  "settings": { "language": "Idioma" }
+}

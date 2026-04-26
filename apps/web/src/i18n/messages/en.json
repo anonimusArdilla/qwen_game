@@ -1,0 +1,9 @@
+{
+  "app": { "name": "Wooden Puzzles" },
+  "home": {
+    "kicker": "Wooden Puzzles",
+    "title": "Calm, tactile puzzle-building — coming soon.",
+    "subtitle": "Phase 2 localization is wired. Next: theming and the puzzle engine."
+  },
+  "settings": { "language": "Language" }
+}
