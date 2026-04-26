@@ -5,5 +5,11 @@
     "title": "Calm, tactile puzzle-building — coming soon.",
     "subtitle": "Phase 2 localization is wired. Next: theming and the puzzle engine."
   },
-  "settings": { "language": "Language" }
+  "settings": {
+    "language": "Language",
+    "theme": "Theme",
+    "theme.system": "System",
+    "theme.light": "Light",
+    "theme.dark": "Dark"
+  }
 }

@@ -1,20 +1,5 @@
 @import "tailwindcss";
-
-:root {
-  --color-bg: 255 255 255;
-  --color-fg: 17 17 17;
-  --color-muted: 102 102 102;
-  --color-accent: 166 124 82;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-bg: 12 12 12;
-    --color-fg: 245 245 245;
-    --color-muted: 170 170 170;
-    --color-accent: 196 150 104;
-  }
-}
+@import "@/styles/tokens.css";
 
 html,
 body {
@@ -46,4 +31,20 @@ body {
     "Apple SD Gothic Neo",
     "Noto Sans CJK KR",
     sans-serif;
+}
+
+:focus-visible {
+  outline: 2px solid rgb(var(--color-accent));
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 1ms !important;
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+  }
 }

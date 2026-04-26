@@ -5,5 +5,11 @@
     "title": "Un rompecabezas táctil y relajante — muy pronto.",
     "subtitle": "La localización de la Fase 2 ya está lista. Próximo: temas y motor del puzzle."
   },
-  "settings": { "language": "Idioma" }
+  "settings": {
+    "language": "Idioma",
+    "theme": "Tema",
+    "theme.system": "Sistema",
+    "theme.light": "Claro",
+    "theme.dark": "Oscuro"
+  }
 }

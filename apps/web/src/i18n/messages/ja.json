@@ -5,5 +5,11 @@
     "title": "落ち着いた、触感のあるパズル体験 — 近日公開。",
     "subtitle": "フェーズ2のローカライズが完了しました。次はテーマとパズルエンジンです。"
   },
-  "settings": { "language": "言語" }
+  "settings": {
+    "language": "言語",
+    "theme": "テーマ",
+    "theme.system": "システム",
+    "theme.light": "ライト",
+    "theme.dark": "ダーク"
+  }
 }

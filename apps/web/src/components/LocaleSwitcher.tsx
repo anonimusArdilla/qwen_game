@@ -18,10 +18,10 @@ export function LocaleSwitcher() {
   const [isPending, startTransition] = useTransition()
 
   return (
-    <label className="inline-flex items-center gap-2 text-sm text-[rgb(var(--color-muted))]">
+    <label className="text-muted inline-flex items-center gap-2 text-sm">
       <span>{t("language")}</span>
       <select
-        className="rounded-md border border-black/10 bg-transparent px-2 py-1 text-[rgb(var(--color-fg))] disabled:opacity-60 dark:border-white/15"
+        className="border-border/15 text-fg rounded-md border bg-transparent px-2 py-1 disabled:opacity-60"
         value={locale}
         disabled={isPending}
         onChange={(e) => {

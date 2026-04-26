@@ -5,5 +5,11 @@
     "title": "沉静、触感十足的拼图体验 —— 即将上线。",
     "subtitle": "第 2 阶段本地化已接入。下一步：主题与拼图引擎。"
   },
-  "settings": { "language": "语言" }
+  "settings": {
+    "language": "语言",
+    "theme": "主题",
+    "theme.system": "跟随系统",
+    "theme.light": "浅色",
+    "theme.dark": "深色"
+  }
 }
