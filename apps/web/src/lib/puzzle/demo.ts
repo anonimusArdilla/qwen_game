@@ -1,10 +1,10 @@
 import { vec, type Vec2 } from "@/lib/puzzle/vec2"
 import { type Piece, type PuzzleState } from "@/lib/puzzle/state"
-import { rectShape } from "@/lib/puzzle/shapes"
+import { polyominoShape } from "@/lib/puzzle/shapes"
 
 type DemoPieceSpec = {
   id: string
-  size: { w: number; h: number }
+  cells: readonly { x: number; y: number }[]
   targetPos: Vec2
   targetRotation: number
   startPos: Vec2
@@ -13,11 +13,18 @@ type DemoPieceSpec = {
 
 export function createDemoPuzzleState(): PuzzleState {
   const board = { width: 800, height: 500 }
+  const cell = 50
 
   const piecesSpec: DemoPieceSpec[] = [
     {
       id: "p1",
-      size: { w: 140, h: 80 },
+      cells: [
+        { x: 0, y: 0 },
+        { x: 0, y: 1 },
+        { x: 0, y: 2 },
+        { x: 1, y: 2 },
+        { x: 2, y: 2 }
+      ],
       targetPos: vec(220, 170),
       targetRotation: 0,
       startPos: vec(120, 380),
@@ -25,7 +32,13 @@ export function createDemoPuzzleState(): PuzzleState {
     },
     {
       id: "p2",
-      size: { w: 110, h: 110 },
+      cells: [
+        { x: 0, y: 0 },
+        { x: 2, y: 0 },
+        { x: 0, y: 1 },
+        { x: 1, y: 1 },
+        { x: 2, y: 1 }
+      ],
       targetPos: vec(400, 170),
       targetRotation: 0,
       startPos: vec(680, 140),
@@ -33,7 +46,13 @@ export function createDemoPuzzleState(): PuzzleState {
     },
     {
       id: "p3",
-      size: { w: 170, h: 70 },
+      cells: [
+        { x: 0, y: 0 },
+        { x: 1, y: 0 },
+        { x: 1, y: 1 },
+        { x: 1, y: 2 },
+        { x: 2, y: 2 }
+      ],
       targetPos: vec(580, 170),
       targetRotation: 0,
       startPos: vec(640, 380),
@@ -41,7 +60,12 @@ export function createDemoPuzzleState(): PuzzleState {
     },
     {
       id: "p4",
-      size: { w: 120, h: 90 },
+      cells: [
+        { x: 0, y: 0 },
+        { x: 1, y: 0 },
+        { x: 2, y: 0 },
+        { x: 1, y: 1 }
+      ],
       targetPos: vec(270, 320),
       targetRotation: 0,
       startPos: vec(320, 70),
@@ -49,7 +73,13 @@ export function createDemoPuzzleState(): PuzzleState {
     },
     {
       id: "p5",
-      size: { w: 160, h: 60 },
+      cells: [
+        { x: 0, y: 0 },
+        { x: 1, y: 0 },
+        { x: 0, y: 1 },
+        { x: 1, y: 1 },
+        { x: 0, y: 2 }
+      ],
       targetPos: vec(450, 320),
       targetRotation: 0,
       startPos: vec(140, 120),
@@ -57,7 +87,12 @@ export function createDemoPuzzleState(): PuzzleState {
     },
     {
       id: "p6",
-      size: { w: 90, h: 140 },
+      cells: [
+        { x: 0, y: 0 },
+        { x: 1, y: 0 },
+        { x: 2, y: 0 },
+        { x: 0, y: 1 }
+      ],
       targetPos: vec(620, 320),
       targetRotation: 0,
       startPos: vec(510, 70),
@@ -73,7 +108,7 @@ export function createDemoPuzzleState(): PuzzleState {
     targetRotation: s.targetRotation,
     locked: false,
     z: i + 1,
-    shape: rectShape(s.size.w, s.size.h)
+    shape: polyominoShape(s.cells, cell)
   }))
 
   return {
