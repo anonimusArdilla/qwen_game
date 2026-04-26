@@ -29,5 +29,17 @@
     "toolbar.reset": "リセット",
     "hint": "ドラッグで移動 · Alt を押しながらドラッグで回転"
   },
-  "puzzles": { "demo1": { "title": "デモパズル" } }
+  "puzzles": {
+    "demo1": { "title": "デモパズル" },
+    "demo2": { "title": "デモパズル 2" },
+    "demo3": { "title": "デモパズル 3" },
+    "demo4": { "title": "デモパズル 4" },
+    "demo5": { "title": "デモパズル 5" },
+    "demo6": { "title": "デモパズル 6" },
+    "demo7": { "title": "デモパズル 7" },
+    "demo8": { "title": "デモパズル 8" },
+    "demo9": { "title": "デモパズル 9" },
+    "demo10": { "title": "デモパズル 10" },
+    "demo11": { "title": "デモパズル 11" }
+  }
 }

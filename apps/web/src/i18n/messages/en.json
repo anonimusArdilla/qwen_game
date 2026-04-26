@@ -29,5 +29,17 @@
     "toolbar.reset": "Reset",
     "hint": "Drag to move · Hold Alt and drag to rotate"
   },
-  "puzzles": { "demo1": { "title": "Demo Puzzle" } }
+  "puzzles": {
+    "demo1": { "title": "Demo Puzzle" },
+    "demo2": { "title": "Demo Puzzle 2" },
+    "demo3": { "title": "Demo Puzzle 3" },
+    "demo4": { "title": "Demo Puzzle 4" },
+    "demo5": { "title": "Demo Puzzle 5" },
+    "demo6": { "title": "Demo Puzzle 6" },
+    "demo7": { "title": "Demo Puzzle 7" },
+    "demo8": { "title": "Demo Puzzle 8" },
+    "demo9": { "title": "Demo Puzzle 9" },
+    "demo10": { "title": "Demo Puzzle 10" },
+    "demo11": { "title": "Demo Puzzle 11" }
+  }
 }
