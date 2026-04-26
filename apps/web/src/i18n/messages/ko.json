@@ -11,5 +11,12 @@
     "theme.system": "시스템",
     "theme.light": "라이트",
     "theme.dark": "다크"
+  },
+  "nav": { "play": "플레이" },
+  "play": {
+    "toolbar.undo": "실행 취소",
+    "toolbar.redo": "다시 실행",
+    "toolbar.reset": "초기화",
+    "hint": "드래그로 이동 · Alt 누른 채 드래그로 회전"
   }
 }

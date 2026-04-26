@@ -11,5 +11,12 @@
     "theme.system": "システム",
     "theme.light": "ライト",
     "theme.dark": "ダーク"
+  },
+  "nav": { "play": "プレイ" },
+  "play": {
+    "toolbar.undo": "元に戻す",
+    "toolbar.redo": "やり直し",
+    "toolbar.reset": "リセット",
+    "hint": "ドラッグで移動 · Alt を押しながらドラッグで回転"
   }
 }

@@ -11,6 +11,7 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "typecheck": "tsc --noEmit",
+    "puzzle:smoke": "tsx scripts/puzzle-smoke.ts",
     "prepare": "cd ../.. && husky install apps/web/.husky"
   },
   "dependencies": {
@@ -32,6 +33,7 @@
     "prettier": "3.8.3",
     "prettier-plugin-tailwindcss": "0.7.3",
     "tailwindcss": "4.2.4",
+    "tsx": "4.21.0",
     "typescript": "6.0.3"
   },
   "lint-staged": {

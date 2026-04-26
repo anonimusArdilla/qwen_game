@@ -11,5 +11,12 @@
     "theme.system": "跟随系统",
     "theme.light": "浅色",
     "theme.dark": "深色"
+  },
+  "nav": { "play": "开始" },
+  "play": {
+    "toolbar.undo": "撤销",
+    "toolbar.redo": "重做",
+    "toolbar.reset": "重置",
+    "hint": "拖动移动 · 按住 Alt 并拖动旋转"
   }
 }

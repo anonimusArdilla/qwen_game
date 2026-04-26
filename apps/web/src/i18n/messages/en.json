@@ -11,5 +11,12 @@
     "theme.system": "System",
     "theme.light": "Light",
     "theme.dark": "Dark"
+  },
+  "nav": { "play": "Play" },
+  "play": {
+    "toolbar.undo": "Undo",
+    "toolbar.redo": "Redo",
+    "toolbar.reset": "Reset",
+    "hint": "Drag to move · Hold Alt and drag to rotate"
   }
 }

@@ -11,5 +11,12 @@
     "theme.system": "Sistema",
     "theme.light": "Claro",
     "theme.dark": "Oscuro"
+  },
+  "nav": { "play": "Jugar" },
+  "play": {
+    "toolbar.undo": "Deshacer",
+    "toolbar.redo": "Rehacer",
+    "toolbar.reset": "Reiniciar",
+    "hint": "Arrastra para mover · Mantén Alt y arrastra para rotar"
   }
 }
