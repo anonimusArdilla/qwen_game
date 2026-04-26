@@ -14,9 +14,20 @@
   },
   "nav": { "play": "プレイ" },
   "play": {
+    "puzzlesTitle": "パズル",
+    "completed": "クリア",
+    "notCompleted": "未クリア",
+    "badgeCompleted": "クリア",
+    "bestTime": "ベストタイム",
+    "bestMoves": "ベスト手数",
+    "time": "時間",
+    "moves": "手数",
+    "back": "戻る",
+    "missingPuzzle": "パズルが見つかりません。",
     "toolbar.undo": "元に戻す",
     "toolbar.redo": "やり直し",
     "toolbar.reset": "リセット",
     "hint": "ドラッグで移動 · Alt を押しながらドラッグで回転"
-  }
+  },
+  "puzzles": { "demo1": { "title": "デモパズル" } }
 }

@@ -14,9 +14,20 @@
   },
   "nav": { "play": "Play" },
   "play": {
+    "puzzlesTitle": "Puzzles",
+    "completed": "Completed",
+    "notCompleted": "Not completed",
+    "badgeCompleted": "Completed",
+    "bestTime": "Best time",
+    "bestMoves": "Best moves",
+    "time": "Time",
+    "moves": "Moves",
+    "back": "Back",
+    "missingPuzzle": "Puzzle not found.",
     "toolbar.undo": "Undo",
     "toolbar.redo": "Redo",
     "toolbar.reset": "Reset",
     "hint": "Drag to move · Hold Alt and drag to rotate"
-  }
+  },
+  "puzzles": { "demo1": { "title": "Demo Puzzle" } }
 }

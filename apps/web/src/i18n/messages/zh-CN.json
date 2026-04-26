@@ -14,9 +14,20 @@
   },
   "nav": { "play": "开始" },
   "play": {
+    "puzzlesTitle": "拼图",
+    "completed": "已完成",
+    "notCompleted": "未完成",
+    "badgeCompleted": "已完成",
+    "bestTime": "最佳用时",
+    "bestMoves": "最佳步数",
+    "time": "用时",
+    "moves": "步数",
+    "back": "返回",
+    "missingPuzzle": "未找到拼图。",
     "toolbar.undo": "撤销",
     "toolbar.redo": "重做",
     "toolbar.reset": "重置",
     "hint": "拖动移动 · 按住 Alt 并拖动旋转"
-  }
+  },
+  "puzzles": { "demo1": { "title": "演示拼图" } }
 }

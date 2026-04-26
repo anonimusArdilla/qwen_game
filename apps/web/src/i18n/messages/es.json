@@ -14,9 +14,20 @@
   },
   "nav": { "play": "Jugar" },
   "play": {
+    "puzzlesTitle": "Puzzles",
+    "completed": "Completado",
+    "notCompleted": "No completado",
+    "badgeCompleted": "Completado",
+    "bestTime": "Mejor tiempo",
+    "bestMoves": "Mejores movimientos",
+    "time": "Tiempo",
+    "moves": "Movimientos",
+    "back": "Volver",
+    "missingPuzzle": "No se encontró el puzzle.",
     "toolbar.undo": "Deshacer",
     "toolbar.redo": "Rehacer",
     "toolbar.reset": "Reiniciar",
     "hint": "Arrastra para mover · Mantén Alt y arrastra para rotar"
-  }
+  },
+  "puzzles": { "demo1": { "title": "Puzzle de Demostración" } }
 }
