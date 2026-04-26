@@ -1,9 +1,15 @@
 import { type Vec2 } from "@/lib/puzzle/vec2"
 
-export type PieceRect = {
+export type PieceRectLocal = {
+  x: number
+  y: number
   w: number
   h: number
 }
+
+export type PieceShape =
+  | { kind: "rect"; w: number; h: number }
+  | { kind: "compound"; rects: PieceRectLocal[] }
 
 export type Piece = {
   id: string
@@ -13,7 +19,7 @@ export type Piece = {
   targetRotation: number
   locked: boolean
   z: number
-  shape: PieceRect
+  shape: PieceShape
 }
 
 export type PuzzleBoard = {

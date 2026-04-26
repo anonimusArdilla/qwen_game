@@ -1,5 +1,6 @@
 import { vec, type Vec2 } from "@/lib/puzzle/vec2"
 import { type Piece, type PuzzleState } from "@/lib/puzzle/state"
+import { rectShape } from "@/lib/puzzle/shapes"
 
 type DemoPieceSpec = {
   id: string
@@ -72,7 +73,7 @@ export function createDemoPuzzleState(): PuzzleState {
     targetRotation: s.targetRotation,
     locked: false,
     z: i + 1,
-    shape: { w: s.size.w, h: s.size.h }
+    shape: rectShape(s.size.w, s.size.h)
   }))
 
   return {
