@@ -53,7 +53,7 @@ export function ThemeSwitcher() {
 
   return (
     <label className="text-muted inline-flex items-center gap-2 text-sm">
-      <span>{t("theme")}</span>
+      <span>{t("theme.label")}</span>
       <select
         className="border-border/15 text-fg rounded-md border bg-transparent px-2 py-1 disabled:opacity-60"
         value={preference}

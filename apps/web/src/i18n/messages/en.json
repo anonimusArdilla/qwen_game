@@ -7,10 +7,7 @@
   },
   "settings": {
     "language": "Language",
-    "theme": "Theme",
-    "theme.system": "System",
-    "theme.light": "Light",
-    "theme.dark": "Dark"
+    "theme": { "label": "Theme", "system": "System", "light": "Light", "dark": "Dark" }
   },
   "nav": { "play": "Play" },
   "play": {
@@ -24,9 +21,7 @@
     "moves": "Moves",
     "back": "Back",
     "missingPuzzle": "Puzzle not found.",
-    "toolbar.undo": "Undo",
-    "toolbar.redo": "Redo",
-    "toolbar.reset": "Reset",
+    "toolbar": { "undo": "Undo", "redo": "Redo", "reset": "Reset" },
     "hint": "Drag to move · Hold Alt and drag to rotate"
   },
   "puzzles": {

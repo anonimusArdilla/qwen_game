@@ -7,10 +7,7 @@
   },
   "settings": {
     "language": "言語",
-    "theme": "テーマ",
-    "theme.system": "システム",
-    "theme.light": "ライト",
-    "theme.dark": "ダーク"
+    "theme": { "label": "テーマ", "system": "システム", "light": "ライト", "dark": "ダーク" }
   },
   "nav": { "play": "プレイ" },
   "play": {
@@ -24,9 +21,7 @@
     "moves": "手数",
     "back": "戻る",
     "missingPuzzle": "パズルが見つかりません。",
-    "toolbar.undo": "元に戻す",
-    "toolbar.redo": "やり直し",
-    "toolbar.reset": "リセット",
+    "toolbar": { "undo": "元に戻す", "redo": "やり直し", "reset": "リセット" },
     "hint": "ドラッグで移動 · Alt を押しながらドラッグで回転"
   },
   "puzzles": {

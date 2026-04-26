@@ -7,10 +7,7 @@
   },
   "settings": {
     "language": "Idioma",
-    "theme": "Tema",
-    "theme.system": "Sistema",
-    "theme.light": "Claro",
-    "theme.dark": "Oscuro"
+    "theme": { "label": "Tema", "system": "Sistema", "light": "Claro", "dark": "Oscuro" }
   },
   "nav": { "play": "Jugar" },
   "play": {
@@ -24,9 +21,7 @@
     "moves": "Movimientos",
     "back": "Volver",
     "missingPuzzle": "No se encontró el puzzle.",
-    "toolbar.undo": "Deshacer",
-    "toolbar.redo": "Rehacer",
-    "toolbar.reset": "Reiniciar",
+    "toolbar": { "undo": "Deshacer", "redo": "Rehacer", "reset": "Reiniciar" },
     "hint": "Arrastra para mover · Mantén Alt y arrastra para rotar"
   },
   "puzzles": {
