@@ -1,0 +1,47 @@
+{
+  "name": "wooden-puzzle-web",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "typecheck": "tsc --noEmit",
+    "puzzle:smoke": "tsx scripts/puzzle-smoke.ts",
+    "prepare": "cd ../.. && husky install apps/web/.husky"
+  },
+  "dependencies": {
+    "next": "16.2.4",
+    "next-intl": "4.9.1",
+    "react": "19.2.5",
+    "react-dom": "19.2.5"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "4.2.4",
+    "@types/node": "25.6.0",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "eslint": "9.39.4",
+    "eslint-config-next": "16.2.4",
+    "husky": "8.0.3",
+    "lint-staged": "16.4.0",
+    "postcss": "8.5.10",
+    "prettier": "3.8.3",
+    "prettier-plugin-tailwindcss": "0.7.3",
+    "tailwindcss": "4.2.4",
+    "tsx": "4.21.0",
+    "typescript": "6.0.3"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,mjs,cjs,json,css,md}": [
+      "prettier --write"
+    ],
+    "*.{js,jsx,ts,tsx,mjs,cjs}": [
+      "eslint --fix"
+    ]
+  }
+}

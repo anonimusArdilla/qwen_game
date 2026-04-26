@@ -1,0 +1,40 @@
+{
+  "app": { "name": "Rompecabezas de Madera" },
+  "home": {
+    "kicker": "Rompecabezas de Madera",
+    "title": "Un rompecabezas táctil y relajante — muy pronto.",
+    "subtitle": "La localización de la Fase 2 ya está lista. Próximo: temas y motor del puzzle."
+  },
+  "settings": {
+    "language": "Idioma",
+    "theme": { "label": "Tema", "system": "Sistema", "light": "Claro", "dark": "Oscuro" }
+  },
+  "nav": { "play": "Jugar" },
+  "play": {
+    "puzzlesTitle": "Puzzles",
+    "completed": "Completado",
+    "notCompleted": "No completado",
+    "badgeCompleted": "Completado",
+    "bestTime": "Mejor tiempo",
+    "bestMoves": "Mejores movimientos",
+    "time": "Tiempo",
+    "moves": "Movimientos",
+    "back": "Volver",
+    "missingPuzzle": "No se encontró el puzzle.",
+    "toolbar": { "undo": "Deshacer", "redo": "Rehacer", "reset": "Reiniciar" },
+    "hint": "Arrastra para mover · Mantén Alt y arrastra para rotar"
+  },
+  "puzzles": {
+    "starter-six": { "title": "Inicio (6)" },
+    "diagonal-six": { "title": "Diagonal (6)" },
+    "cascade-six": { "title": "Cascada (6)" },
+    "cross-six": { "title": "Cruz (6)" },
+    "stack-eight": { "title": "Pila (8)" },
+    "stagger-eight": { "title": "Escalonado (8)" },
+    "split-eight": { "title": "Dividido (8)" },
+    "drift-ten": { "title": "Deriva (10)" },
+    "orbit-ten": { "title": "Órbita (10)" },
+    "dense-twelve-a": { "title": "Denso A (12)" },
+    "dense-twelve-b": { "title": "Denso B (12)" }
+  }
+}

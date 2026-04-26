@@ -1,0 +1,40 @@
+{
+  "app": { "name": "Wooden Puzzles" },
+  "home": {
+    "kicker": "Wooden Puzzles",
+    "title": "Calm, tactile puzzle-building — coming soon.",
+    "subtitle": "Phase 2 localization is wired. Next: theming and the puzzle engine."
+  },
+  "settings": {
+    "language": "Language",
+    "theme": { "label": "Theme", "system": "System", "light": "Light", "dark": "Dark" }
+  },
+  "nav": { "play": "Play" },
+  "play": {
+    "puzzlesTitle": "Puzzles",
+    "completed": "Completed",
+    "notCompleted": "Not completed",
+    "badgeCompleted": "Completed",
+    "bestTime": "Best time",
+    "bestMoves": "Best moves",
+    "time": "Time",
+    "moves": "Moves",
+    "back": "Back",
+    "missingPuzzle": "Puzzle not found.",
+    "toolbar": { "undo": "Undo", "redo": "Redo", "reset": "Reset" },
+    "hint": "Drag to move · Hold Alt and drag to rotate"
+  },
+  "puzzles": {
+    "starter-six": { "title": "Starter Six" },
+    "diagonal-six": { "title": "Diagonal Six" },
+    "cascade-six": { "title": "Cascade Six" },
+    "cross-six": { "title": "Cross Six" },
+    "stack-eight": { "title": "Stack Eight" },
+    "stagger-eight": { "title": "Stagger Eight" },
+    "split-eight": { "title": "Split Eight" },
+    "drift-ten": { "title": "Drift Ten" },
+    "orbit-ten": { "title": "Orbit Ten" },
+    "dense-twelve-a": { "title": "Dense Twelve A" },
+    "dense-twelve-b": { "title": "Dense Twelve B" }
+  }
+}

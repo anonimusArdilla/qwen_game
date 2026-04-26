@@ -1,0 +1,40 @@
+{
+  "app": { "name": "木製パズル" },
+  "home": {
+    "kicker": "木製パズル",
+    "title": "落ち着いた、触感のあるパズル体験 — 近日公開。",
+    "subtitle": "フェーズ2のローカライズが完了しました。次はテーマとパズルエンジンです。"
+  },
+  "settings": {
+    "language": "言語",
+    "theme": { "label": "テーマ", "system": "システム", "light": "ライト", "dark": "ダーク" }
+  },
+  "nav": { "play": "プレイ" },
+  "play": {
+    "puzzlesTitle": "パズル",
+    "completed": "クリア",
+    "notCompleted": "未クリア",
+    "badgeCompleted": "クリア",
+    "bestTime": "ベストタイム",
+    "bestMoves": "ベスト手数",
+    "time": "時間",
+    "moves": "手数",
+    "back": "戻る",
+    "missingPuzzle": "パズルが見つかりません。",
+    "toolbar": { "undo": "元に戻す", "redo": "やり直し", "reset": "リセット" },
+    "hint": "ドラッグで移動 · Alt を押しながらドラッグで回転"
+  },
+  "puzzles": {
+    "starter-six": { "title": "スターター（6）" },
+    "diagonal-six": { "title": "対角（6）" },
+    "cascade-six": { "title": "カスケード（6）" },
+    "cross-six": { "title": "クロス（6）" },
+    "stack-eight": { "title": "スタック（8）" },
+    "stagger-eight": { "title": "スタッガー（8）" },
+    "split-eight": { "title": "スプリット（8）" },
+    "drift-ten": { "title": "ドリフト（10）" },
+    "orbit-ten": { "title": "オービット（10）" },
+    "dense-twelve-a": { "title": "密集 A（12）" },
+    "dense-twelve-b": { "title": "密集 B（12）" }
+  }
+}

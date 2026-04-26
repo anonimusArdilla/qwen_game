@@ -1,0 +1,33 @@
+:root {
+  --color-bg: 255 255 255;
+  --color-fg: 17 17 17;
+  --color-muted: 102 102 102;
+  --color-border: 0 0 0;
+  --color-accent: 166 124 82;
+  --color-surface: 255 255 255;
+  --color-surface-2: 247 247 247;
+
+  --radius-sm: 10px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.08);
+
+  --ease-standard: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --dur-1: 200ms;
+  --dur-2: 300ms;
+}
+
+.dark {
+  --color-bg: 12 12 12;
+  --color-fg: 245 245 245;
+  --color-muted: 170 170 170;
+  --color-border: 255 255 255;
+  --color-accent: 196 150 104;
+  --color-surface: 18 18 18;
+  --color-surface-2: 26 26 26;
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.5);
+}

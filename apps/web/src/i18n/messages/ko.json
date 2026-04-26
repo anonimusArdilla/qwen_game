@@ -1,0 +1,40 @@
+{
+  "app": { "name": "우드 퍼즐" },
+  "home": {
+    "kicker": "우드 퍼즐",
+    "title": "차분하고 촉감적인 퍼즐 경험 — 곧 공개됩니다.",
+    "subtitle": "2단계 로컬라이제이션 연결이 완료되었습니다. 다음: 테마와 퍼즐 엔진."
+  },
+  "settings": {
+    "language": "언어",
+    "theme": { "label": "테마", "system": "시스템", "light": "라이트", "dark": "다크" }
+  },
+  "nav": { "play": "플레이" },
+  "play": {
+    "puzzlesTitle": "퍼즐",
+    "completed": "완료",
+    "notCompleted": "미완료",
+    "badgeCompleted": "완료",
+    "bestTime": "최고 시간",
+    "bestMoves": "최고 이동",
+    "time": "시간",
+    "moves": "이동",
+    "back": "뒤로",
+    "missingPuzzle": "퍼즐을 찾을 수 없습니다.",
+    "toolbar": { "undo": "실행 취소", "redo": "다시 실행", "reset": "초기화" },
+    "hint": "드래그로 이동 · Alt 누른 채 드래그로 회전"
+  },
+  "puzzles": {
+    "starter-six": { "title": "스타터(6)" },
+    "diagonal-six": { "title": "대각(6)" },
+    "cascade-six": { "title": "캐스케이드(6)" },
+    "cross-six": { "title": "크로스(6)" },
+    "stack-eight": { "title": "스택(8)" },
+    "stagger-eight": { "title": "스태거(8)" },
+    "split-eight": { "title": "스플릿(8)" },
+    "drift-ten": { "title": "드리프트(10)" },
+    "orbit-ten": { "title": "오빗(10)" },
+    "dense-twelve-a": { "title": "밀집 A(12)" },
+    "dense-twelve-b": { "title": "밀집 B(12)" }
+  }
+}
