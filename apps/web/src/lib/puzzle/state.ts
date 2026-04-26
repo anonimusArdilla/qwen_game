@@ -24,6 +24,9 @@ export type PuzzleBoard = {
 export type SnapConfig = {
   distancePx: number
   angleRad: number
+  magnetDistancePx: number
+  magnetAngleRad: number
+  magnetStrength: number
 }
 
 export type PuzzleState = {

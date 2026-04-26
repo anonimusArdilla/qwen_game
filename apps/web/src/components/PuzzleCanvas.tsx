@@ -2,7 +2,14 @@
 
 import { useEffect, useMemo, useRef } from "react"
 
-import { hitTestOrientedRect, snapSatisfied } from "@/lib/puzzle/geom"
+import {
+  angleDiff,
+  clamp01,
+  hitTestOrientedRect,
+  lerp,
+  smoothstep,
+  snapSatisfied
+} from "@/lib/puzzle/geom"
 import { bumpZ, findPiece, snapshotPiece, type Piece, type PuzzleState } from "@/lib/puzzle/state"
 import { captureMoveRotate, recordAction, type UndoState } from "@/lib/puzzle/undo"
 import { dist, sub, type Vec2, vec } from "@/lib/puzzle/vec2"
@@ -222,7 +229,21 @@ export function PuzzleCanvas({
         dragRef.current.rotateStartRotation = null
 
         const offset = dragRef.current.dragOffsetLocal ?? vec(0, 0)
-        piece.pos = vec(pt.x - offset.x, pt.y - offset.y)
+        const rawPos = vec(pt.x - offset.x, pt.y - offset.y)
+        piece.pos = rawPos
+
+        const cfg = next.snap
+        const d = dist(piece.pos, piece.targetPos)
+        const a = angleDiff(piece.rotation, piece.targetRotation)
+
+        if (d <= cfg.magnetDistancePx && a <= cfg.magnetAngleRad) {
+          const t = 1 - clamp01(d / cfg.magnetDistancePx)
+          const w = smoothstep(t) * cfg.magnetStrength
+          piece.pos = {
+            x: lerp(piece.pos.x, piece.targetPos.x, w),
+            y: lerp(piece.pos.y, piece.targetPos.y, w)
+          }
+        }
       }
 
       onStateChange(next)

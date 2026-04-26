@@ -79,6 +79,12 @@ export function createDemoPuzzleState(): PuzzleState {
     board,
     pieces,
     activePieceId: null,
-    snap: { distancePx: 18, angleRad: 0.25 }
+    snap: {
+      distancePx: 18,
+      angleRad: 0.25,
+      magnetDistancePx: 40,
+      magnetAngleRad: 0.45,
+      magnetStrength: 0.25
+    }
   }
 }

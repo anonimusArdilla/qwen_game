@@ -38,7 +38,13 @@ const extra6 = [
 export function createDemo2PuzzleState() {
   return buildPuzzleState(
     make({
-      snap: { distancePx: 18, angleRad: 0.25 },
+      snap: {
+        distancePx: 18,
+        angleRad: 0.25,
+        magnetDistancePx: 40,
+        magnetAngleRad: 0.45,
+        magnetStrength: 0.25
+      },
       pieces: [
         {
           id: base6[0].id,
@@ -96,7 +102,13 @@ export function createDemo2PuzzleState() {
 export function createDemo3PuzzleState() {
   return buildPuzzleState(
     make({
-      snap: { distancePx: 18, angleRad: 0.25 },
+      snap: {
+        distancePx: 18,
+        angleRad: 0.25,
+        magnetDistancePx: 40,
+        magnetAngleRad: 0.45,
+        magnetStrength: 0.25
+      },
       pieces: [
         {
           id: base6[0].id,
@@ -154,7 +166,13 @@ export function createDemo3PuzzleState() {
 export function createDemo4PuzzleState() {
   return buildPuzzleState(
     make({
-      snap: { distancePx: 18, angleRad: 0.25 },
+      snap: {
+        distancePx: 18,
+        angleRad: 0.25,
+        magnetDistancePx: 40,
+        magnetAngleRad: 0.45,
+        magnetStrength: 0.25
+      },
       pieces: [
         {
           id: base6[0].id,
@@ -213,7 +231,13 @@ export function createDemo5PuzzleState() {
   const pieces = [...base6, ...extra2] as const
   return buildPuzzleState(
     make({
-      snap: { distancePx: 16, angleRad: 0.22 },
+      snap: {
+        distancePx: 16,
+        angleRad: 0.22,
+        magnetDistancePx: 36,
+        magnetAngleRad: 0.42,
+        magnetStrength: 0.22
+      },
       pieces: [
         {
           id: pieces[0].id,
@@ -288,7 +312,13 @@ export function createDemo6PuzzleState() {
   const pieces = [...base6, ...extra2] as const
   return buildPuzzleState(
     make({
-      snap: { distancePx: 16, angleRad: 0.22 },
+      snap: {
+        distancePx: 16,
+        angleRad: 0.22,
+        magnetDistancePx: 36,
+        magnetAngleRad: 0.42,
+        magnetStrength: 0.22
+      },
       pieces: [
         {
           id: pieces[0].id,
@@ -363,7 +393,13 @@ export function createDemo7PuzzleState() {
   const pieces = [...base6, ...extra2] as const
   return buildPuzzleState(
     make({
-      snap: { distancePx: 16, angleRad: 0.22 },
+      snap: {
+        distancePx: 16,
+        angleRad: 0.22,
+        magnetDistancePx: 36,
+        magnetAngleRad: 0.42,
+        magnetStrength: 0.22
+      },
       pieces: [
         {
           id: pieces[0].id,
@@ -438,7 +474,13 @@ export function createDemo8PuzzleState() {
   const pieces = [...base6, ...extra2, ...extra4] as const
   return buildPuzzleState(
     make({
-      snap: { distancePx: 14, angleRad: 0.2 },
+      snap: {
+        distancePx: 14,
+        angleRad: 0.2,
+        magnetDistancePx: 32,
+        magnetAngleRad: 0.4,
+        magnetStrength: 0.2
+      },
       pieces: [
         {
           id: pieces[0].id,
@@ -529,7 +571,13 @@ export function createDemo9PuzzleState() {
   const pieces = [...base6, ...extra2, ...extra4] as const
   return buildPuzzleState(
     make({
-      snap: { distancePx: 14, angleRad: 0.2 },
+      snap: {
+        distancePx: 14,
+        angleRad: 0.2,
+        magnetDistancePx: 32,
+        magnetAngleRad: 0.4,
+        magnetStrength: 0.2
+      },
       pieces: [
         {
           id: pieces[0].id,
@@ -620,7 +668,13 @@ export function createDemo10PuzzleState() {
   const pieces = [...base6, ...extra2, ...extra4, ...extra6] as const
   return buildPuzzleState(
     make({
-      snap: { distancePx: 12, angleRad: 0.18 },
+      snap: {
+        distancePx: 12,
+        angleRad: 0.18,
+        magnetDistancePx: 28,
+        magnetAngleRad: 0.38,
+        magnetStrength: 0.18
+      },
       pieces: [
         {
           id: pieces[0].id,
@@ -727,7 +781,13 @@ export function createDemo11PuzzleState() {
   const pieces = [...base6, ...extra2, ...extra4, ...extra6] as const
   return buildPuzzleState(
     make({
-      snap: { distancePx: 12, angleRad: 0.18 },
+      snap: {
+        distancePx: 12,
+        angleRad: 0.18,
+        magnetDistancePx: 28,
+        magnetAngleRad: 0.38,
+        magnetStrength: 0.18
+      },
       pieces: [
         {
           id: pieces[0].id,

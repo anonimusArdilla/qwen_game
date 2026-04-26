@@ -55,3 +55,18 @@ export function snapSatisfied(args: {
   const okAngle = angleDiff(args.rotation, args.targetRotation) <= args.maxAngle
   return okDist && okAngle
 }
+
+export function clamp01(v: number): number {
+  if (v < 0) return 0
+  if (v > 1) return 1
+  return v
+}
+
+export function lerp(a: number, b: number, t: number): number {
+  return a + (b - a) * t
+}
+
+export function smoothstep(t: number): number {
+  const x = clamp01(t)
+  return x * x * (3 - 2 * x)
+}
