@@ -1,0 +1,21 @@
+{
+  "@@locale": "en",
+  "appTitle": "Beat Drift",
+  "play": "Play",
+  "settings": "Settings",
+  "language": "Language",
+  "systemLanguage": "System default",
+  "audio": "Audio",
+  "mute": "Mute",
+  "musicVolume": "Music volume",
+  "sfxVolume": "SFX volume",
+  "back": "Back",
+  "score": "Score",
+  "languageNameEn": "English",
+  "languageNameZhHans": "Simplified Chinese",
+  "languageNameJa": "Japanese",
+  "languageNameKo": "Korean",
+  "languageNameTh": "Thai",
+  "languageNameId": "Indonesian"
+}
+

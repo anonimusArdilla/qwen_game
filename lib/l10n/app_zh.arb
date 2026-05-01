@@ -1,0 +1,21 @@
+{
+  "@@locale": "zh",
+  "appTitle": "节拍漂移",
+  "play": "开始",
+  "settings": "设置",
+  "language": "语言",
+  "systemLanguage": "跟随系统",
+  "audio": "音频",
+  "mute": "静音",
+  "musicVolume": "音乐音量",
+  "sfxVolume": "音效音量",
+  "back": "返回",
+  "score": "得分",
+  "languageNameEn": "English",
+  "languageNameZhHans": "简体中文",
+  "languageNameJa": "日本語",
+  "languageNameKo": "한국어",
+  "languageNameTh": "ไทย",
+  "languageNameId": "Bahasa Indonesia"
+}
+

@@ -1,0 +1,21 @@
+{
+  "@@locale": "th",
+  "appTitle": "บีทดริฟต์",
+  "play": "เล่น",
+  "settings": "การตั้งค่า",
+  "language": "ภาษา",
+  "systemLanguage": "ค่าเริ่มต้นของระบบ",
+  "audio": "เสียง",
+  "mute": "ปิดเสียง",
+  "musicVolume": "ระดับเสียงเพลง",
+  "sfxVolume": "ระดับเสียงเอฟเฟกต์",
+  "back": "ย้อนกลับ",
+  "score": "คะแนน",
+  "languageNameEn": "English",
+  "languageNameZhHans": "简体中文",
+  "languageNameJa": "日本語",
+  "languageNameKo": "한국어",
+  "languageNameTh": "ไทย",
+  "languageNameId": "Bahasa Indonesia"
+}
+

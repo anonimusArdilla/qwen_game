@@ -1,0 +1,21 @@
+{
+  "@@locale": "ko",
+  "appTitle": "비트 드리프트",
+  "play": "플레이",
+  "settings": "설정",
+  "language": "언어",
+  "systemLanguage": "시스템 기본값",
+  "audio": "오디오",
+  "mute": "음소거",
+  "musicVolume": "음악 볼륨",
+  "sfxVolume": "효과음 볼륨",
+  "back": "뒤로",
+  "score": "점수",
+  "languageNameEn": "English",
+  "languageNameZhHans": "简体中文",
+  "languageNameJa": "日本語",
+  "languageNameKo": "한국어",
+  "languageNameTh": "ไทย",
+  "languageNameId": "Bahasa Indonesia"
+}
+

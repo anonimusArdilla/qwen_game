@@ -1,53 +1,39 @@
-# qwen_game
+# Beat Drift
 
-A game project built with Qwen.
+Portrait rhythm lane dodger built with Flutter + Flame.
 
-## Description
+## 快速开始
 
-<!-- Add a brief description of your game here -->
-
-## Features
-
-<!-- List key features of your game -->
-
-## Installation
+1. 复制环境变量模板并填写：
 
 ```bash
-# Clone the repository
-git clone <repository-url>
-
-# Navigate to the project directory
-cd qwen_game
-
-# Install dependencies (update based on your tech stack)
-# npm install  # for Node.js projects
-# pip install -r requirements.txt  # for Python projects
+cp .env.example .env
 ```
 
-## Usage
-
-<!-- Add instructions on how to run/play the game -->
+2. 拉取依赖并生成本地化代码：
 
 ```bash
-# Example command to start the game
-# npm start
-# python main.py
+flutter pub get
+flutter gen-l10n
 ```
 
-## Technologies Used
+3. 运行：
 
-<!-- List the technologies, frameworks, and libraries used -->
+```bash
+flutter run
+```
 
-- 
+## 验证
 
-## Contributing
+```bash
+flutter analyze
+flutter test
+flutter build apk --release
+```
 
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## License
-
-<!-- Specify the license under which this project is distributed -->
-
-## Acknowledgments
-
-<!-- Add any acknowledgments or credits -->
+## 文档
+- 架构：[ARCHITECTURE.md](file:///workspace/ARCHITECTURE.md)
+- 设计：[GAME_DESIGN.md](file:///workspace/GAME_DESIGN.md)
+- 经济：[ECONOMY.md](file:///workspace/ECONOMY.md)
+- 资产：[ASSET_PIPELINE.md](file:///workspace/ASSET_PIPELINE.md)
+- 任务：[TODO.md](file:///workspace/TODO.md)
